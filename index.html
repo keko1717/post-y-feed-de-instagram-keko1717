@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Grid</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .img-fixed {
+      object-fit: cover;
+      aspect-ratio: 1/1;
+      width: 100%;
+    }
+    .fuente-instagram {
+      font-family: cursive;
+    }
+    .btn-nav {
+      border: none;
+      background: transparent;
+    }
+    .btn-nav.active .bi,
+    .btn-nav.active small {
+      color: #0d6efd; 
+    }
+    .btn-nav .bi,
+    .btn-nav small {
+      color: #6c757d; 
+    }
+  </style>
+</head>
+<body>
+ 
+  <nav class="navbar bg-body-tertiary px-5">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      
+      
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <i class="bi bi-instagram"></i>
+        <h3 class="mt-2 fuente-instagram">Instagram</h3>
+      </a>
+      
+     
+      <div class="d-flex gap-2 align-items-center">
+        
+       
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+        </button>
+        
+        
+        <div class="dropdown">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-gear-fill"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accessibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+
+ 
+  <div class="d-flex gap-2 justify-content-center mt-3">
+    
+    <a href="index.html" class="btn btn-nav active d-flex flex-column align-items-center">
+      <i class="bi bi-grid-3x3 fs-3"></i>
+      
+    </a>
+
+   
+    <a href="feed.html" class="btn btn-nav d-flex flex-column align-items-center">
+      <i class="bi bi-square-fill fs-3"></i>
+      
+    </a>
+  </div>
+
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <h5 class="modal-title">Create a new post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        
+        <div class="modal-body">
+          <label class="form-label">Caption:</label>
+          <input type="text" class="form-control" placeholder="Add the caption of your post here">
+        </div>
+        
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-primary">Save</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://cmitsolutions.com/bothell-wa-1091/wp-content/uploads/sites/105/2023/03/hacker-g840eb2d5f_1920.jpg" class="card-img-top img-fixed">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://media.istockphoto.com/id/471085531/es/foto/tejados-con-graffiti-la-ciudad-de-nueva-york.jpg?s=612x612&w=0&k=20&c=OTn-xGt-1Sm0QCndZTqF6APkEMqlzrU18yHAT6Gg3NY=" class="card-img-top img-fixed">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://media.wired.com/photos/644318b17b25a434b1f3bbd7/3:2/w_1920,c_limit/security_hacker_names.jpg" class="card-img-top img-fixed">
+          </div>
+        </div>
+       
+         <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://www.csoonline.com/wp-content/uploads/2023/06/hacker_hackingsecurity_threat_crime_criminal_with_black_hat_mask_and_crowbar_breaks_into_a_laptop_by_drdrawer_shutterstock_1364574311_royalty-free_digital-only_2400x1600-100890822-orig.jpg?resize=1536%2C1024&quality=50&strip=all" class="card-img-top img-fixed">
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://www.intelligentciso.com/wp-content/uploads/sites/6/2023/07/AdobeStock_205932110_1000px.jpg" class="card-img-top img-fixed">
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://estaticos-cdn.prensaiberica.es/clip/f7a965a4-492d-4884-9fbc-72cf7f3b8909_alta-libre-aspect-ratio_default_0.jpg" class="card-img-top img-fixed">
+          
+            </div>
+         </div>
+        
+         <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://i.ytimg.com/vi/DRhNmZhtcGs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB-YExNs4yxz9VUUqKeVt4adXjL2g" class="card-img-top img-fixed">
+            </div>
+         </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://uvn-brightspot.s3.amazonaws.com/assets/vixes/imj/L/Los-5-mejores-paisajes-del-mundo-1.jpg" class="card-img-top img-fixed">
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://www.pandasecurity.com/en/mediacenter/src/uploads/2016/03/pandasecurity-Who-are-the-most-famous-hackers-in-history.jpg" class="card-img-top img-fixed">
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

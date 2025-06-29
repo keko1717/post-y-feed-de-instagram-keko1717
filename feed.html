@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram Feed</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <style>
+    .fuente-instagram {
+      font-family: cursive;
+    }
+    .btn-nav {
+      border: none;
+      background: transparent;
+    }
+    .btn-nav.active .bi,
+    .btn-nav.active small {
+      color: #0d6efd;
+    }
+    .btn-nav .bi,
+    .btn-nav small {
+      color: #6c757d;
+    }
+    .dropdown-menu a.logout-item {
+      color: red !important;
+    }
+    .post-card {
+      max-width: 600px;
+      margin: 30px auto;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background: #fff;
+    }
+    .post-header {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .post-user-img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .post-image {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+    .post-body {
+      padding: 10px;
+    }
+    .post-actions i {
+      font-size: 1.4rem;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .post-likes {
+      font-weight: 600;
+      margin-top: 5px;
+    }
+    .post-caption {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  
+  <nav class="navbar bg-body-tertiary px-5">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <i class="bi bi-instagram"></i>
+        <h3 class="mt-2 fuente-instagram">Instagram</h3>
+      </a>
+      <div class="d-flex gap-2 align-items-center">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+        </button>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+            <i class="bi bi-gear-fill"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accessibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item logout-item" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <div class="d-flex gap-2 justify-content-center mt-3">
+    <a href="index.html" class="btn btn-nav d-flex flex-column align-items-center">
+      <i class="bi bi-grid-3x3 fs-3"></i>
+    </a>
+    <a href="feed.html" class="btn btn-nav active d-flex flex-column align-items-center">
+      <i class="bi bi-square-fill fs-3"></i>
+    </a>
+  </div>
+
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Create a new post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <label for="campoTexto" class="form-label">Caption:</label>
+          <input type="text" class="form-control" id="campoTexto" placeholder="Add the caption of your post here"/>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container py-3">
+
+    
+    <div class="post-card">
+      <div class="post-header">
+        
+        <strong>burlandoseguridades$</strong>
+      </div>
+      <img src="https://media.wired.com/photos/644318b17b25a434b1f3bbd7/3:2/w_1920,c_limit/security_hacker_names.jpg" class="post-image" alt="Post 1">
+      <div class="post-body">
+        <div class="post-actions mb-1">
+          <i class="bi bi-heart"></i>
+          <i class="bi bi-chat"></i>
+          <i class="bi bi-send"></i>
+        </div>
+        <div class="post-likes">120 likes</div>
+        <div class="post-caption"><strong>burlandoseguridades$</strong> Los hackers más influyentes del mundo digital somos NOSOTROS!</div>
+      </div>
+    </div>
+
+   
+    <div class="post-card">
+      <div class="post-header">
+        
+        <strong>catchme_ifyoucan$</strong>
+      </div>
+      <img src="https://media.istockphoto.com/id/471085531/es/foto/tejados-con-graffiti-la-ciudad-de-nueva-york.jpg?s=612x612&w=0&k=20&c=OTn-xGt-1Sm0QCndZTqF6APkEMqlzrU18yHAT6Gg3NY=" class="post-image" alt="Post 2">
+      <div class="post-body">
+        <div class="post-actions mb-1">
+          <i class="bi bi-heart"></i>
+          <i class="bi bi-chat"></i>
+          <i class="bi bi-send"></i>
+        </div>
+        <div class="post-likes">85 likes</div>
+        <div class="post-caption"><strong>catchme_ifyoucan$</strong>Las calles de NY hablan!</div>
+      </div>
+    </div>
+
+    
+    <div class="post-card">
+      <div class="post-header">
+        
+        <strong>fixthe$ystem__</strong>
+      </div>
+      <img src="https://www.csoonline.com/wp-content/uploads/2023/06/hacker_hackingsecurity_threat_crime_criminal_with_black_hat_mask_and_crowbar_breaks_into_a_laptop_by_drdrawer_shutterstock_1364574311_royalty-free_digital-only_2400x1600-100890822-orig.jpg?resize=1536%2C1024&quality=50&strip=all" class="post-image" alt="Post 3">
+      <div class="post-body">
+        <div class="post-actions mb-1">
+          <i class="bi bi-heart"></i>
+          <i class="bi bi-chat"></i>
+          <i class="bi bi-send"></i>
+        </div>
+        <div class="post-likes">230 likes</div>
+        <div class="post-caption"><strong>fixthe$ystem__</strong> ¿Quiénes somos los mejores hackers hoy en día?</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

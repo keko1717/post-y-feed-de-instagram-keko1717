@@ -1,0 +1,65 @@
+.img-fixed {
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
+
+.fuente-instagram {
+  font-family: cursive;
+}
+
+
+.btn-nav {
+  border: none;
+  background: transparent;
+}
+.btn-nav.active .bi,
+.btn-nav.active small {
+  color: #0d6efd; 
+}
+.btn-nav .bi,
+.btn-nav small {
+  color: #6c757d; 
+}
+
+
+.dropdown-menu a.logout-item {
+  color: red !important;
+}
+
+
+.feed-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+.feed-item {
+  margin-bottom: 30px;
+}
+
+
+.feed-photo {
+  width: 70%;            
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 15px auto;    
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.feed-caption {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #262626;
+  text-align: left;
+  font-weight: 500;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
